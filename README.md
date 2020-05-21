@@ -23,3 +23,6 @@ Including a local image in the Prompts properties.
 ### Resource Links
 
 https://www.w3schools.com/howto/howto_css_flip_card.asp
+https://github.com/howlCode/tarot_api
+https://github.com/ekelen/tarot-api
+

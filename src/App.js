@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component';
-// import { CardFlip } from './components/card-flip/card-flip.component';
+
 
 import './App.css';
 
@@ -17,6 +17,7 @@ class App extends Component {
           category: 'Weapon',
           playwright: 'Pamela',
           label: 'Ten of Swords',
+          assigned: true,
           
         },
         {
@@ -25,6 +26,7 @@ class App extends Component {
           category: 'Demon',
           playwright: 'Daphne',
           label: 'Ace of Cups',
+          assigned: true,
         },
         {
           idea: 'Rope',
@@ -32,6 +34,7 @@ class App extends Component {
           category: 'Weapon',
           playwright: 'Unassigned',
           label: 'Page of Swords',
+          assigned: false,
         },
         {
           idea: 'Tower',
@@ -39,6 +42,7 @@ class App extends Component {
           category: 'Haunting',
           playwright: 'Unassigned',
           label: 'Two of Coins',
+          assigned: false,
         }
       ],
       

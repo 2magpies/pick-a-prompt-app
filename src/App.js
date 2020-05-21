@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { CardList } from './components/card-list/card-list.component';
+// import { CardFlip } from './components/card-flip/card-flip.component';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      prompts: [
+        {
+          idea: 'Poison',
+          id: '1',
+          category: 'Weapon',
+          playwright: 'Pamela',
+          label: 'Ten of Swords',
+          
+        },
+        {
+          idea: 'Ghoul',
+          id: '2',
+          category: 'Demon',
+          playwright: 'Daphne',
+          label: 'Ace of Cups',
+        },
+        {
+          idea: 'Rope',
+          id: '3',
+          category: 'Weapon',
+          playwright: 'Unassigned',
+          label: 'Page of Swords',
+        },
+        {
+          idea: 'Tower',
+          id: '3',
+          category: 'Haunting',
+          playwright: 'Unassigned',
+          label: 'Two of Coins',
+        }
+      ],
+      
+    };
+  }
+
+  render() {
+    const { prompts } = this.state;
+    return (
+      <div className="App">
+        <h1>Pick-A-Prompt</h1>
+        <CardList prompts={prompts}></CardList>
+        
+      </div>
+    );
+  }
 }
 
 export default App;

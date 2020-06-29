@@ -41,7 +41,7 @@ Including a local image in the Prompts properties.
 
 ### Deployment
 (not working yet):   
-https://2magpies.github.io/pick-a-prompt/
+https://2magpies.github.io/pick-a-prompt-app/
 
 ### Resource Links
 
